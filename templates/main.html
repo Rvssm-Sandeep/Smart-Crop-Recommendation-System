@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Crop Recommendation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <link href="./styles.css">
+    <div class="container">
+        <h1>Smart Crop Recommendation System</h1>
+        
+        <form id="cropForm" action="{{url_for('predict')}}" method="post">
+            <div></div>
+
+            <label for="State_Name">State_Name:</label>
+            <select name="State_Name" id="State_Name" required>
+                <option value="None" selected disabled hidden>--State Name--</option>
+                <option value="0">Andaman and nicobar islands</option>
+                <option value="1">Andhra Pradesh</option>
+                <option value="2">Arunachal Pradesh</option>
+                <option value="3">Assam</option>
+                <option value="4">Bihar</option>
+                <option value="5">Chandigarh</option>
+                <option value="6">Chhattisgarh</option>
+                <option value="7">Dadra and nagar haveli</option>
+                <option value="8">Goa</option>
+                <option value="9">Gujarat</option>
+                <option value="10">Haryana</option>
+                <option value="11">Himachal Pradesh</option>
+                <option value="12">Jammu and Kashmir</option>
+                <option value="13">Jharkhand</option>
+                <option value="14">Karnataka</option>
+                <option value="15">Kerala</option>
+                <option value="16">Madhya Pradesh</option>
+                <option value="17">Maharashtra</option>
+                <option value="18">Manipur</option>
+                <option value="19">Meghalaya</option>
+                <option value="20">Mizoram</option>
+                <option value="21">Nagaland</option>
+                <option value="22">Odisha</option>
+                <option value="23">Puducherry</option>
+                <option value="24">Punjab</option>
+                <option value="25">Rajasthan</option>
+                <option value="26">Sikkim</option>
+                <option value="27 Nadu">Tamil Nadu</option>
+                <option value="28">Telangana</option>
+                <option value="29">Tripura</option>
+                <option value="30">Uttar Pradesh</option>
+                <option value="31">Uttarakhand</option>
+                <option value="32">West Bengal</option>
+            </select>
+            <div>
+                <label for="Crop_Type">Crop Type:</label>
+                <select name = "Crop_Type" id="Crop_Type" required>
+                    <option value="None" selected disabled hidden>--Crop Type--</option>
+                    <option value="0">Kharif</option>
+                    <option value="1">Rabi</option>
+                    <option value="2">Summer</option>
+                    <option value="3">Whole Year</option>
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                <label for="nitrogen">Nitrogen Value:</label>
+                <input type="number" name="nitrogen" id="nitrogen" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phosphorous">Phosphorous Value:</label>
+                <input type="number" name="phosphorous" id="phosphorous" required>
+            </div>
+
+            <div class="form-group">
+                <label for="potassium">Potassium Value:</label>
+                <input type="number" name="potassium" id="potassium" required>
+            </div>
+
+            <div class="form-group">
+                <label for="pH">pH (mm):</label>
+                <input type="number" name="pH" id="pH" step="any" min="0.01"required>
+            </div>
+
+            <div class="form-group">
+                <label for="rainfall">Rainfall (mm):</label>
+                <input type="number" name="rainfall" id="rainfall" step="any" min="0.01" required>
+            </div>
+
+            <div class="form-group">
+                <label for="temperature">Temperature:</label>
+                <input type="number" name="temperature" id="temperature" step="any" min="0.01" required>
+            </div>
+
+            <div class="form-group">
+                <label for="area">Area:</label>
+                <input type="number" name="area" id="area"  required>
+            </div>
+
+            <div class="form-group">
+                <label for="prod">Production:</label>
+                <input type="number" name="prod" id="prod" required>
+            </div>
+
+            <div class="form-group">
+                <label for="yiel">Yield:</label>
+                <input type="number" name="yiel" id="yiel" step="any" min="0.01" required>
+            </div>
+
+            <button type="submit">Get Crop Recommendation</button>
+        </form>
+    </div>
+</body>
+</html>
+</body>
+</html>

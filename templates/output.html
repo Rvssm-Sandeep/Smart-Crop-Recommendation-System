@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Recommended Crop</h1>
+            <h3>{{ prediction }} is the recommended crop</h3>
+            <!-- Display recommended crop details here -->
+            <div class="card-content">
+                <!-- Display crop details here -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
