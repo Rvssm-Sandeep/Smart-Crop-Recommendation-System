@@ -1,4 +1,3 @@
-Sure! Here's a single comprehensive README file for your "Smart Crop Recommendation System" project:
 
 ```markdown
 # Smart Crop Recommendation System
