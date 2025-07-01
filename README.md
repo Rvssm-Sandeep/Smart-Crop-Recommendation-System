@@ -1,5 +1,4 @@
 
-```markdown
 # Smart Crop Recommendation System
 
 The Smart Crop Recommendation System is designed to help farmers choose the best crop to grow based on various factors. This README provides detailed instructions on how to set up, run, and contribute to the project using terminal commands.
